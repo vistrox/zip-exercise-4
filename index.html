@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My PokéDex</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<main>
+  <div class="wrapper">
+    <img src="images/Pokedex.png" alt="Pokedex" class="pokedex-img">
+    <div class="filters">
+      <select id="typeFilter">
+        <option value="All">All Types</option>
+        <option value="Electric">Electric</option>
+        <option value="Water">Water</option>
+        <option value="Grass">Grass</option>
+        <option value="Normal">Normal</option>
+        <option value="Dragon">Dragon</option>
+        <option value="Psychic">Psychic</option>
+        <option value="Fairy">Fairy</option>
+        <option value="Fire">Fire</option>
+        <option value="Flying">Flying</option>
+      </select>
+
+      <select id="captureFilter">
+        <option value="All">All</option>
+        <option value="Captured">Captured</option>
+        <option value="NotCaptured">Not Captured</option>
+      </select>
+    </div>
+    <div class="container" id="container">
+      <div class="pokemon-card" data-pokemon-type="Electric" data-capture-status="true">
+        <img src="images/Pikachu.png" alt="Pikachu">
+        <h2>Pikachu</h2>
+        <p>Electric</p>
+        <label><input type="checkbox" checked> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Water" data-capture-status="true">
+        <img src="images/Greninja.png" alt="Greninja">
+        <h2>Greninja</h2>
+        <p>Water</p>
+        <label><input type="checkbox" checked> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Water/Flying" data-capture-status="false">
+        <img src="images/Gyarados.png" alt="Gyarados">
+        <h2>Gyarados</h2>
+        <p>Water, Flying</p>
+        <label><input type="checkbox"> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Normal/Fairy" data-capture-status="false">
+        <img src="images/Jigglypuff.png" alt="Jigglypuff">
+        <h2>Jigglypuff</h2>
+        <p>Normal, Fairy</p>
+        <label><input type="checkbox"> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Normal" data-capture-status="true">
+        <img src="images/Eevee.png" alt="Eevee">
+        <h2>Eevee</h2>
+        <p>Normal</p>
+        <label><input type="checkbox" checked> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Psychic/Fairy" data-capture-status="false">
+        <img src="images/Gardevoir.png" alt="Gardevoir">
+        <h2>Gardevoir</h2>
+        <p>Psychic, Fairy</p>
+        <label><input type="checkbox"> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Dragon/Fire" data-capture-status="true">
+        <img src="images/Reshiram.png" alt="Reshiram">
+        <h2>Reshiram</h2>
+        <p>Dragon, Fire</p>
+        <label><input type="checkbox" checked> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Grass" data-capture-status="false">
+        <img src="images/Sceptile.png" alt="Sceptile">
+        <h2>Sceptile</h2>
+        <p>Grass</p>
+        <label><input type="checkbox"> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Normal" data-capture-status="true">
+        <img src="images/Snorlax.png" alt="Snorlax">
+        <h2>Snorlax</h2>
+        <p>Normal</p>
+        <label><input type="checkbox" checked> Captured</label>
+      </div>
+
+      <div class="pokemon-card" data-pokemon-type="Water" data-capture-status="true">
+        <img src="images/Squirtle.png" alt="Squirtle">
+        <h2>Squirtle</h2>
+        <p>Water</p>
+        <label><input type="checkbox" checked> Captured</label>
+      </div>
+    </div>
+
+  </div>
+</main>
+</body>
+</html>
